@@ -1,5 +1,3 @@
-import React from "react";
-
 function Heading({ color = "olive", text, fontSize }) {
   return (
     <div>

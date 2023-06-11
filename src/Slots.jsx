@@ -1,5 +1,3 @@
-import React from "react";
-
 function Slots({ num1, num2, num3 }) {
   const isWinner = num1 === num2 && num2 === num3;
   const styles = { color: isWinner ? "green" : "red" };
