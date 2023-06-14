@@ -1,12 +1,7 @@
-function handleClick() {
-  console.log("Clicked the button");
-}
-
-function Clicker() {
+function Clicker({ buttonText, message }) {
   return (
     <div>
-      <p>Click The Button</p>
-      <button onClick={handleClick}>Click</button>
+      <button onClick={() => alert(message)}>{buttonText}</button>
     </div>
   );
 }

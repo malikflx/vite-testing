@@ -10,6 +10,12 @@ import Slots from "./Slots";
 import ShoppingList from "./ShoppingList";
 import PropertyList from "./PropertyList";
 import Clicker from "./Clicker";
+import Form from "./Form";
+import Counter from "./Counter";
+import Toggler from "./Toggler";
+import ToggleCounter from "./ToggleCounter";
+import ColorBoxes from "./ColorBoxes";
+import ColorBox from "./ColorBox";
 
 const data = [
   {
@@ -77,11 +83,31 @@ const properties = [
   },
 ];
 
+const colors = [
+  "green",
+  "yellow",
+  "pink",
+  "violet",
+  "black",
+  "brown",
+  "teal",
+  "orange",
+  "red",
+  "blue",
+];
+
 function App() {
   return (
     <div>
-      <Clicker />
-      <PropertyList properties={properties} />
+      <ColorBoxes colors={colors} />
+      {/* <ColorBoxes /> */}
+      {/* <Toggler /> */}
+      {/* <ToggleCounter /> */}
+      {/* <Counter /> */}
+      {/* <Form /> */}
+      {/* <Clicker message="HI!!!" buttonText="Click Me" />
+      <Clicker message="Please Stop Clicking Me!" buttonText="do not click" /> */}
+      {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data} />
       <Slots num1="1" num2="1" num3="1" />
       <Slots num1="1" num2="2" num3="1" />
